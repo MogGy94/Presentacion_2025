@@ -13,7 +13,7 @@ import {
 function App() {
   const [count, setCount] = useState(0)
   const gracias = {
-    l_main: "Putos",
+    l_main: "Patos",
     l_sub: "Pinches",
     d_main: "Gracias",
     d_sub: "muchas"
