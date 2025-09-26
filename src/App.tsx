@@ -1,6 +1,5 @@
 import { useState } from 'react'
 
-import * as React from 'react';
 import TextAnimation from './components/Textanimation/TextAnimation';
 import NavBar from './components/NavBar/NavBar';
 //import GraciasView from './view/gracias/gracias';
