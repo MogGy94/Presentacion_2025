@@ -7,7 +7,7 @@ import NavBar from './components/NavBar/NavBar';
 
 import './App.css'
 import {
-  Slide_1,
+  Header,
   Slide_2
 } from './Slides';
 
@@ -20,7 +20,7 @@ function App() {
     d_sub: "muchas"
   }
   const contents = {
-    s1: <Slide_1 />,
+    s1: <Header />,
     s2: <Slide_2 />,
     s3: <Slide_2 />,
     s4: <Slide_2 />,

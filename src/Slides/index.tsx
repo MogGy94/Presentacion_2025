@@ -1,3 +1,3 @@
-export { Slide_1 } from "./slide_1"
+export { Header } from "./Header"
 export { Slide_2 } from "./slide_2"
 
