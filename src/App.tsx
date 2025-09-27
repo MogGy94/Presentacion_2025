@@ -25,8 +25,8 @@ function App() {
     }
   })
   const gracias = {
-    l_main: "Putos",
-    l_sub: "Pinches",
+    l_main: "Coman",
+    l_sub: "PAN 🍞",
     d_main: "Gracias",
     d_sub: "muchas"
   }
