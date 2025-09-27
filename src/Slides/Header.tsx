@@ -4,8 +4,8 @@ export const Header = (props) => {
     return (
         <HeadingSlide>
             <div className="">
-                <h1>Spicy Lemon Javeline</h1>
-                <h2>Lo mejor de ambos Mundos</h2>
+                <h1>La importancia del Pan</h1>
+                <h3>en la socidedad Moderna</h3>
             </div>
         </HeadingSlide>
     )

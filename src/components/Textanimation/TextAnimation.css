@@ -29,7 +29,7 @@
     text-align: center;
     display: flex;
     flex-direction: column;
-    animation: animate 7s ease-in-out infinite;
+    animation: animate 4s ease-in-out infinite;
 }
 
 .text__animation .box.box2 h2{

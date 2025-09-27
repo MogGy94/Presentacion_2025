@@ -5,27 +5,35 @@ import NavBar from './components/NavBar/NavBar';
 //import GraciasView from './view/gracias/gracias';
 
 import './App.css'
-import {
-  Header,
-  Slide_2
-} from './Slides';
+import { Header } from './Slides';
+import SLIDES from './Slides';
+
+
 
 function App() {
   const [count, setCount] = useState(0)
+
+  let SLIDE_COMPONENTS = {} 
+
+  SLIDES.SLIDES_INFO.forEach((slides, num)=>{
+    slides = {...slides, num: num}
+    console.log(slides);
+    if (num % 2 === 0 ){
+      SLIDE_COMPONENTS = { ...SLIDE_COMPONENTS, [`S${num}`]: <SLIDES.Slide_1 {...slides} />}
+    }else {
+      SLIDE_COMPONENTS = { ...SLIDE_COMPONENTS, [`S${num}`]: <SLIDES.Slide_2 {...slides} /> }
+    }
+  })
   const gracias = {
-    l_main: "Patos",
+    l_main: "Putos",
     l_sub: "Pinches",
     d_main: "Gracias",
     d_sub: "muchas"
   }
   const contents = {
-    s1: <Header />,
-    s2: <Slide_2 />,
-    s3: <Slide_2 />,
-    s4: <Slide_2 />,
-    s5: <Slide_2 />,
-    s6: <Slide_2 />,
-    s7: <TextAnimation {...gracias} />
+    header: <Header />,
+    ...SLIDE_COMPONENTS,
+    last: <TextAnimation {...gracias} />
     //s7: <GraciasView />,
   }
   return (
