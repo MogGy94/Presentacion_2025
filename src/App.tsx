@@ -25,10 +25,10 @@ function App() {
     }
   })
   const gracias = {
-    l_main: "Coman",
-    l_sub: "PAN 🍞",
+    l_sub: "Coman",
+    l_main: "PAN 🍞",
+    d_sub: "muchas",
     d_main: "Gracias",
-    d_sub: "muchas"
   }
   const contents = {
     header: <Header />,
